@@ -3,7 +3,7 @@ $servername = "localhost";
 $username = "";
 $password = "";
 $dbname = "test";
-$username = "\"nick\"";
+$username = "\"".htmlspecialchars($_POST["name"])."\"";
 
 
 // Create connection
