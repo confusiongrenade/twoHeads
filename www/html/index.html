@@ -1,33 +1,33 @@
-<!DOCCTYPE html>
+<!DOCTYPE html>
 <html>
-<body background-color: black>
-<h1>
-  <font color="#FFFFCC">TwoHeads</font>
-</h1>
+<body>
 
-<h1><font color="#FFFFCC>"TwoHeads</h1>
+<h1 style="background-color:aqua">Number Check</h1>
 
-  <p>Useful Links:</p>
+<p style="color:red">Please input a number between 1 and 10:</p>
 
-  <a href="http://www3.nd.edu/~rmichale/annoy.py">Annoy.py</a>
-  <a href="http://www3.nd.edu/~rmichale/.vimrc">.vimrc</a>
-</font>
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get input value
+    x = document.getElementById("numb").value;
+
+    // If statement check- probably need to change when implementing library
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
 </body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html> 
