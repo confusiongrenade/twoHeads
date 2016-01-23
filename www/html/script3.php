@@ -13,9 +13,8 @@ if ($conn->connect_error) {
 } 
 echo "Connected successfully";
 
-
-$sql = "SELECT * FROM loginTest"
-$RESULT = $CONN->QUERY($sql);
+$sql = "SELECT * FROM loginTest";
+$result = $conn->QUERY($sql);
 
 if ($result->num_rows > 0) {
 
@@ -23,17 +22,11 @@ if ($result->num_rows > 0) {
 
 while($row  =  $result->fetch_assoc()) {
 
-	echo "name : " . $row["name"].;
+	echo "name : " . $row["name"];
 }
 } else {
 	echo "0 results";
 }
 
 $conn->close();
-
 ?>
-
-
-
-
-
