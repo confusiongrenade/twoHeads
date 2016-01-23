@@ -3,7 +3,7 @@ $servername = "localhost";
 $username = "";
 $password = "";
 $dbname = "test";
-$username = "nick";
+$username = "\"nick\"";
 
 
 // Create connection
@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 } 
 echo "Connected successfully";
 
-$sql = "SELECT * FROM loginTest WHERE name LIKE $username";
+$sql = "SELECT * FROM loginTest WHERE name LIKE ".$username;
 $result = $conn->QUERY($sql);
 
 if ($result->num_rows > 0) {
