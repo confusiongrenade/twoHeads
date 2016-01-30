@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<head>
+		<link rel="stylesheet"type="text/css"href="logintest1.css"/>
+	</head>
+	<body>
+		<h1>
+			Welcome to twoHeads!
+		</h1>
+		<p>
+			Please Use This Space To Describe Your Project <br>
+		</p>
+		<form name="login" action="createProj.php" method="Post" accept-charset="utf-8">
+			<fieldset>
+				<legend>Your Great New Idea:</legend>
+				Project Name:<br>
+				<input type="text" name="name" placeholder="Name Your Project" required><br><br>
+				Description:<br>
+				<textarea name="description" rows="5" cols="50" placeholder="What's it about?" required></textarea><br><br>
+				Your Name:<br>
+				<input type="text" name="owner" placeholder="Who Are You?" required><br><br>
+				Creation Date:<br>
+				<input type="date" name="date" required><br><br>
+				<input type="submit" value="Submit">
+			</fieldset>
+		</form>
+	</body>
