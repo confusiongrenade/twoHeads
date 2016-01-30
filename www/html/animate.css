@@ -21,6 +21,27 @@ Copyright (c) 2015 Daniel Eden
   animation-fill-mode: both;
 }
 
+.animatedEvenSlower {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animatedSlowest {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animatedSlower {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
@@ -107,21 +128,21 @@ Copyright (c) 2015 Daniel Eden
 }
 
 @-webkit-keyframes flash {
-  0%, 50%, 100% {
+  100% {
     opacity: 1;
   }
 
-  25%, 75% {
+  0%, 75% {
     opacity: 0;
   }
 }
 
 @keyframes flash {
-  0%, 50%, 100% {
+  100% {
     opacity: 1;
   }
 
-  25%, 75% {
+  0%, 75% {
     opacity: 0;
   }
 }
@@ -130,6 +151,33 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-name: flash;
   animation-name: flash;
 }
+
+@-webkit-keyframes flashQuick {
+  100% {
+    opacity: 1;
+  }
+
+  0%, 25%, 50%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flashQuick {
+  100% {
+    opacity: 1;
+  }
+
+  0%, 25%, 50%, 75% {
+    opacity: 0;
+  }
+}
+
+.flashQuick {
+  -webkit-animation-name: flashQuick;
+  animation-name: flashQuick;
+}
+
+
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
@@ -1158,19 +1206,17 @@ Copyright (c) 2015 Daniel Eden
   0% {
     opacity: 0;
   }
-
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
 @keyframes fadeIn {
-  0% {
+  0%{
     opacity: 0;
   }
-
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 

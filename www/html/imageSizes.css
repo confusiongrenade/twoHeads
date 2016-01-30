@@ -1,4 +1,9 @@
-#imageSizing 
-{
-	width: 20%;
+#flash{
+	opacity: 0;
+	-webkit-transition-property: width; /* Safari */
+  	-webkit-transition-duration: 0s; /* Safari */
+    	-webkit-transition-delay: 5s; /* Safari */
+    	transition-property: width;
+    	transition-duration: 0s;
+    	transition-delay: 5s;
 }
