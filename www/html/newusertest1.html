@@ -9,7 +9,7 @@
 		<p>
 			Please Take A Moment To Tell Us A Little About Yourself<br>
 		</p>
-		<form name="login" action="script3.php" method="Post" accept-charset="utf-8">
+		<form name="login" action="addUser.php" method="Post" accept-charset="utf-8">
 			<fieldset>
 				<legend>Personal Information:</legend>
 				Name:<br>
@@ -19,9 +19,9 @@
 				Passowrd:<br>
 				<input type="password" name="password" placeholder="How Do We Know It's You?" required><br><br>
 				Email Address:<br>
-				<input type="email" name="email" placeholder="you@mail.com"><br><br>
+				<input type="email" name="email" placeholder="you@mail.com" required><br><br>
 				Graduation Year:<br>
-				<input type="text" name="gradyear" placeholder="2081" required><br><br>
+				<input type="number" name="gradYear" placeholder="2081" required><br><br>
 				<input type="submit" value="Sign Me Up!">
 			</fieldset>
 		</form>
