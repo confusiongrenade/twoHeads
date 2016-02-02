@@ -1,9 +1,23 @@
-#flash{
-	opacity: 0;
-	-webkit-transition-property: width; /* Safari */
-  	-webkit-transition-duration: 0s; /* Safari */
-    	-webkit-transition-delay: 5s; /* Safari */
-    	transition-property: width;
-    	transition-duration: 0s;
-    	transition-delay: 5s;
+.resizing{ /* basic responsive img */
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* IE8 */
+	float:left;
+}
+
+.center{
+	margin-left:3%;
+}
+
+.leftOver{
+	margin-left:50%;
+}
+
+.moveSignUpOver{
+	margin-left:60%;
+}
+
+.lightBulb{
+	float:right;
+	position:absolute;
 }
