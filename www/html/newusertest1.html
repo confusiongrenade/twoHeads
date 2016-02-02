@@ -4,23 +4,23 @@
 	</head>
 	<body>
 		<h1>
-			Welcome to twoHeads!
+			<div><img class="resizing" src="logo.png" width="50%"></div>
 		</h1>
 		<p>
-			Please Take A Moment To Tell Us A Little About Yourself<br>
+			Welcome<br>
 		</p>
 		<form name="login" action="addUser.php" method="Post" accept-charset="utf-8">
 			<fieldset>
 				<legend>Personal Information:</legend>
-				Name:<br>
+				<div class="inputs">Name: </div><br>
 				<input type="text" name="name" placeholder="Put Your Name Here" required><br><br>
-				Username:<br>
+				<div class="inputs">Username:</div><br>
 				<input type="text" name="username" placeholder="Who Are You?" required><br><br>
-				Passowrd:<br>
+				<div class="inputs">Password:</div><br>
 				<input type="password" name="createPassword" placeholder="How Do We Know It's You?" required><br><br>
-				Email Address:<br>
+				<div class="inputs">Email Address:</div><br>
 				<input type="email" name="email" placeholder="you@mail.com" required><br><br>
-				Graduation Year:<br>
+				<div class="inputs">Graduation Year:</div><br>
 				<input type="number" name="gradYear" placeholder="2081" required><br><br>
 				<input type="submit" value="Sign Me Up!">
 			</fieldset>

@@ -1,36 +1,47 @@
 /*logintest1 css sheet*/
+.resizing{ /* basic responsive img */
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* IE8 */
+}
 
 html{
-	background-color: #00bfff;
 	color: black;
-	font-family: Courier,Helvetica,Arial;
+	font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
 }
 
 fieldset{
-	background-color: #0099cc;
-	border-color: black;
 	margin-right: 30%;
 	margin-left: 30%;
+	border: 0;
+	text-align:center;
 }
 
 legend{
-	font-size: 1.3em;
+	text-align: center;
+	font-size: 1.7em;
 	font-weight: bold;
+	color: #909090;
 }
 
 h1{
 	text-align: center;
-	margin-left: 35%;
-	margin-right: 35%;
 	text-decoration: underline;
-	background-color: #0099cc;
 }
 
 input:required{
 	border: 1px solid red;
 }
 
+.inputs{
+	font-size: 1.5em;
+	color: #909090;
+	text-align:center;
+}
+
 p{
 	text-align: center;
-	font-weight: bold;
+	background-color: #29AFB4;
+	color: #FFFFFF;
+	font-size: 1.8em
 }
