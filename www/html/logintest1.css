@@ -30,13 +30,39 @@ h1{
 }
 
 input:required{
-	border: 1px solid red;
+	border: 1px solid #909090;
+	font-size: 1.2em;
+	border-radius:10px;
+	width: 300px;
 }
 
 .inputs{
-	font-size: 1.5em;
+	font-size: 1.8em;
 	color: #909090;
 	text-align:center;
+}
+
+.centre{
+	position: relative;
+  	top: 20%;
+  	transform: translateY(-20%);
+  	left: 50%;
+  	transform: translateX(-50%);
+}
+
+input[type="submit"]
+{
+	    text-decoration:none;
+	    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+	    font-size: 1.3em;
+	    color:white;
+	    background-color:#29AFB4;
+	    line-height:40px;
+	    width: 200px;
+	    border-radius:20px;
+	    -webkit-border-radius:20px;
+	    -moz-border-radius:20px;
+	    border:0;
 }
 
 p{
