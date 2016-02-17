@@ -1,33 +1,55 @@
-<!DOCTYPE html>
-<html>
+<!-- Two Heads Homepage-->
+
+<head>
+<!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+<!-- Animation CSS -->
+    <link rel="stylesheet" href="animate.css" type="text/css">
+    <link rel="stylesheet" href="jquery-1.11.3.min.js" type="text/css">
+<!-- Button CSS -->
+    <link rel="stylesheet" href="button.css" type="text/css">
+
+</head>
+
 <body>
 
-<h1 style="background-color:aqua">Number Check</h1>
 
-<p style="color:red">Please input a number between 1 and 10:</p>
 
-<input id="numb">
 
-<button type="button" onclick="myFunction()">Submit</button>
 
-<p id="demo"></p>
+<!-- Logo -->
+<div class="centerThis fadeIn">
+    
+  <div class="jumbotron fadeIn">
+ 
+  	<img src="twoHeadsLogo.png" width="100%"/>
+	  <!-- Button -->
 
-<script>
-function myFunction() {
-    var x, text;
+	<div class="container">
+	<div class="row row-centered">
+	           <div id="custom-search-input">
+	                            <div class="input-group col-md-5 col-md-offset-5">
+	                                <input type="text" class="  search-query form-control" placeholder="Find Projects Near You" />
+	                                <span class="input-group-btn">
+		                                    <button class="btn btn-danger" type="button" onclick="window.location = 'http://www.google.com';">
+		                                        <span class=" glyphicon glyphicon-search"></span>
+		                                    </button>
+	                                </span>
+	                            </div>
+	                        </div>
+		</div>
+	</div>
 
-    // Get input value
-    x = document.getElementById("numb").value;
+</div>
+  
 
-    // If statement check- probably need to change when implementing library
-    if (isNaN(x) || x < 1 || x > 10) {
-        text = "Input not valid";
-    } else {
-        text = "Input OK";
-    }
-    document.getElementById("demo").innerHTML = text;
-}
-</script>
+
+</div>
+
+
+
+
+
 
 </body>
-</html> 
